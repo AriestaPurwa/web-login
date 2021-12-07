@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    background-image: url("600157.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.login{
+    background-color: #fff;
+    width: 350px;
+    text-align: center;
+    padding: 40px;
+    box-sizing:border-box;
+    border-radius: 10px;
+}
+
+.login h2{
+    margin: 0 0 20px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.login .user{
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.login .user input{
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    border: 3px solid;
+    border-radius: 10px;
+}
+
+.login .user span{
+    position:absolute;
+    top: 12px;
+    left: 10px;
+    padding: 0px;
+    text-transform: capitalize;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.login .user input:focus ~ span,
+.login .user input:valid ~ span{
+    top: -12px;
+    left: 20px;
+    font-size: 12px;
+    background-color:cornflowerblue;
+    padding: 2px 4px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.login .user input[type="submit"]:hover{
+    width: 100%;
+    background-color: rgb(89, 120, 255);
+    color: rgb(255, 255, 255);
+}
